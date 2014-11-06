@@ -2,9 +2,10 @@
 
 ## Step 0: Requirements and clone
 
-* PHP 5.3+ for Laravel project
+* PHP 5.3.7+ for Laravel project
 * PHP 5.4+ for Way/Generators, if you have 5.4+ you can uncomment Way/Generators in /app/config/app.php
-* Apache
+* MCrypt PHP extension
+* An Apache or nginx web server
 
 Clone the repository:
 
@@ -30,7 +31,7 @@ Optional, but can be useful.
 ## Step 3: make app/storage writeable
 
 ```bash
-chmod -R 777 app/storage
+chmod a+w -R app/storage
 ```
 
 ## Step 4: Set up hostname
